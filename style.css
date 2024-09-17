@@ -1,0 +1,184 @@
+/* VÁRIAVEIS */
+
+:root {
+    --cor-preta: #464646;
+    --cor-cinza: #E5E5E5;
+    --cor-cinza-azulado: #EAF2FD;
+    --cor-branco: #FFFFFF;
+    --fonte-base: "Poppins", sans-serif;
+    --peso-fino: 200;
+    --peso-grosso: 500;
+    
+}
+
+/* DEFAULT */
+
+
+* {
+    font-family: var(--fonte-base);
+    background-color: var(--cor-cinza);
+    margin: 0;
+}
+  
+
+/* HEADER */
+
+.header-superior {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 5em;
+}
+
+.header-superior-links ul {
+    list-style-type: none; 
+    display: flex; 
+    gap: 2em;
+}
+
+.header-superior-links a {
+    text-decoration: none; 
+    color: var(--cor-preta);
+}
+
+.header-main {
+    margin: 10em 25em;
+    display: flex;
+    gap: 8em;
+}
+
+.header-main-content {
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+    gap: 1em;
+}
+
+.header-main-content-descricao {
+    font-weight: var(--peso-fino);
+}
+
+.header-main-content-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.icone-imagem {
+    width: 20em; 
+    height: 20em;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+/* MAIN */
+
+/* SOBRE MIM */
+.main-about {
+    background-color: var(--cor-cinza-azulado);
+    padding: 10em 8em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.main-title,
+.main-paragrafo,
+.main-assinatura {
+    background-color: var(--cor-cinza-azulado);
+}
+
+/* SKILLS */
+
+.main-skills {
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-skills-content {
+    display: flex;
+    padding: 3em;
+    flex-direction: row;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    width: 60px; 
+    height: 60px;
+    background-color: var(--cor-branco); 
+    padding: 1.5em;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: fill;
+}
+
+.skill-item figcaption {
+    margin-top: 1em;
+    font-size: 1.1em; 
+    color: var(--cor-preta); 
+    text-align: center; 
+}
+
+/* HOBBIES */
+.main-hobbies {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hobbies-content {
+    display: flex;
+    padding: 3em;
+    flex-direction: row;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.hobbies-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies-item img {
+    width: 60px; 
+    height: 60px;
+    background-color: var(--cor-branco); 
+    padding: 1.5em;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: fill;
+}
+
+.hobbies-item figcaption {
+    margin-top: 1em;
+    font-size: 1.1em; 
+    color: var(--cor-preta); 
+    text-align: center; 
+}
+
+/* FORMAÇÃO */
+.main-formacao {
+    padding: 2em;
+}
+/* PROJETOS */
+.main-projetos {
+    padding: 2em;
+}
+/* CONTATO */
+.main-contato {
+    padding: 2em;
+}
+/* FOOTER */
