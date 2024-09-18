@@ -194,9 +194,32 @@
     </div>
   </section>
     <!-- CONTATO -->
-        <section id="contato" class="main-contato">
-            <h2 class="main-contato-titulo">Contato</h2>
-        </section>
+    <section id="contato" class="main-contato">
+        <h2 class="main-title">Entre em contato:</h2>
+        <form action="https://formsubmit.co/kaiximenes@outlook.com" method="POST" class="formulario-contato">
+            <div class="contato-box">
+                <div class="contato-box-left">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+    
+                <div class="contato-box-right">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+    
+                <div class="contato-box-submit">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
 
     </main>
     <footer></footer>

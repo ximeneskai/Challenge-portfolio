@@ -257,7 +257,6 @@ footer {
 }
 
 
-
 /* PROJETOS */
 
 .main-projetos {
@@ -327,18 +326,90 @@ footer {
 }
 
 /* CONTATO */
+/* Estilização da seção de contato */
 .main-contato {
-    padding: 4em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    padding: 3em;
     background-color: var(--secondary-color);
 }
 
-.main-contato-titulo {
-    background-color: var(--secondary-color);
+.main-contato h2 {
+    margin-bottom: 2em;
+    text-align: center;
 }
+
+.formulario-contato {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80em;
+    margin: 0 auto;
+}
+
+.contato-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2em;
+}
+
+.contato-box-left,
+.contato-box-right,
+.contato-box-submit {
+    flex: 1;
+    min-width: 250px; /* Ajusta o tamanho mínimo para garantir responsividade */
+    padding: 1em;
+}
+
+.formulario-contato label {
+    font-size: 1.1em;
+    color: var(--cor-preta);
+    margin-top: 1em;
+    display: flex;
+}
+
+.formulario-contato input {
+    width: 100%;
+    padding: 0.6em;
+    border: 1px solid var(--cor-cinza);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.formulario-contato textarea {
+    width: 30em;
+    height: 76%;
+    padding: 0.6em;
+    border: 1px solid var(--cor-cinza);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+/* Botão de enviar */
+.contato-box-submit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.formulario-contato button {
+    padding: 1em 2em;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.formulario-contato button:hover {
+    background-color: black;
+}
+
 /* FOOTER */
 
 /* TELA PARA TABLET */
@@ -380,7 +451,40 @@ footer {
         width: 20em; /* Mantém o tamanho da imagem */
         height: 20em; /* Mantém a altura da imagem */
     }
-}
+    .formulario-contato {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contato-box {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .contato-box-left, 
+    .contato-box-right, 
+    .contato-box-submit {
+        width: 100%; /* Cada parte ocupa 100% da largura */
+        min-width: auto; /* Remove o tamanho mínimo para melhor ajuste em telas pequenas */
+        padding: 0;
+    }
+
+    .formulario-contato textarea {
+        width: 100%; /* Garantir que o textarea ocupe toda a largura */
+        height: auto; /* Ajuste automático da altura */
+    }
+
+    .contato-box-submit {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 1.5em; /* Distância entre o botão e os campos */
+    }
+
+    .formulario-contato button {
+        width: 100%; /* Botão ocupará toda a largura da coluna */
+        padding: 1em; /* Ajuste do padding para mais conforto no toque */
+    }
+
 
 /* TELA PARA CELULAR */
 
