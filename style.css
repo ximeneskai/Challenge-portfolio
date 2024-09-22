@@ -331,6 +331,7 @@ footer {
     padding: 3em;
     background-color: var(--secondary-color);
     margin: 0;
+    padding-bottom: 7em;
 }
 
 .main-contato h2 {
@@ -413,6 +414,31 @@ footer {
 
 /* FOOTER */
 
+.rodape {
+    background-color: var(--black-color);
+    margin: 0;
+    color: var(--primary-color); 
+    text-align: center; 
+    padding: 1em;
+    margin: 0;
+}
+
+.rodape-linha {
+    width: 75%; 
+    height: 1px; 
+    background-color: var(--secondary-color); 
+    margin: 0 auto;
+    margin-bottom: 2em; 
+    margin-top: 2em;
+}
+
+.rodape-texto {
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+    font-weight: var(--peso-fino);
+    padding-bottom: 2em;
+}
+
 /* TELA PARA TABLET */
 @media (max-width: 768px) {
     .header-superior {
@@ -486,7 +512,7 @@ footer {
         padding: 1em; /* Ajuste do padding para mais conforto no toque */
     }
 
-
+}
 /* TELA PARA CELULAR */
 
 @media (max-width: 480px) {
@@ -504,3 +530,4 @@ footer {
         height: 20em; /* Mantém a altura da imagem */
     }
 }
+
