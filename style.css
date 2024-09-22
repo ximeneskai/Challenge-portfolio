@@ -272,10 +272,10 @@ footer {
 }
 
 .main-projetos-content {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 3em;
     justify-content: center;
 }
 
@@ -330,6 +330,7 @@ footer {
 .main-contato {
     padding: 3em;
     background-color: var(--secondary-color);
+    margin: 0;
 }
 
 .main-contato h2 {
