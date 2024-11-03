@@ -443,17 +443,15 @@ footer {
 @media (max-width: 768px) {
     .header-superior {
         display: flex;
-        justify-content: center; /* Alinha os links ao centro */
-        margin: 1em; /* Ajusta a margem para telas menores */
+        justify-content: center;
+        margin-left: 1em;
     }
 
     .header-superior-logo {
-        display: none; /* Esconde a logo */
+        display: none;
     }
-
-    .header-superior-links ul {
-        display: flex;
-        gap: 1em; /* Reduz o espaçamento entre os links */
+    .link-oculto {
+        display:none;
     }
 
     .header-main {
@@ -512,6 +510,16 @@ footer {
         padding: 1em; /* Ajuste do padding para mais conforto no toque */
     }
 
+    .main-hobbies-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-skills-content {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 /* TELA PARA CELULAR */
 
@@ -519,7 +527,9 @@ footer {
     .header-main {
         padding: 1em; /* Ajusta ainda mais o padding */
     }
-
+    .link-oculto {
+        display:none;
+    }
     .header-main-content {
         width: 90%; /* Ajusta a largura para ser um pouco menor */
     }
@@ -528,6 +538,16 @@ footer {
         margin-bottom: 1em; /* Ajusta o espaçamento acima da imagem */
         width: 20em; /* Mantém o tamanho da imagem */
         height: 20em; /* Mantém a altura da imagem */
+    }
+
+    .main-hobbies-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-skills-content {
+        display: flex;
+        justify-content: center;
     }
 }
 

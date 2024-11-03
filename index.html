@@ -19,10 +19,10 @@
         <div class="header-superior">
             <h4 class="header-superior-logo">PORTFÓLIO</h4>
             <nav class="header-superior-links">
-                <ul>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                <ul class="header-superior-ul">
+                    <li class="link-oculto"><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li class="link-oculto"><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#formacao">Formação</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -36,7 +36,7 @@
                 <div class="header-main-content-links">
                     <a href="https://github.com/ximeneskai" target="_blank">Github</a>
                     <a href="https://www.linkedin.com/in/ximeneskai/" target="_blank">Linkedin</a>
-                    <!-- <a href="" target="_blank">Currículo</a> -->
+                    <!-- <a href="https://ximeneskai.github.io/cv/" target="_blank">Currículo</a> -->
                 </div>
             </div>
             <img src="imagens/icon-1.jpeg" alt="Imagem de Kai Ximenes Queiroz" class="icone-imagem">
@@ -47,7 +47,7 @@
 <!-- SOBRE MIM -->
         <section id="sobre-mim" class="main-about">
             <h2 class="main-title" style="text-align: center; margin: 0 auto; width: fit-content;">Sobre mim</h2>
-            <p class="main-paragrafo">Filósofo de formação e apaixonado por tecnologia, busco agora construir uma carreira sólida no ramo da tecnologia. Minha jornada nessa área começou com a descoberta da lógica de programação, que me proporcionou uma nova forma de pensar e resolver problemas. Com sólida base em HTML, CSS e JavaScript, adquirida através de cursos como o de <strong>Desenvolvimento Web Full Stack</strong>, pelo Instituto Euvaldo Lodi, ou através da formação de <strong>Iniciante em Programação</strong> e <strong>Especialização Front End</strong>, pela Alura, tenho desenvolvido projetos que demonstram minha capacidade de criar interfaces intuitivas e responsivas. Minhas habilidades em lógica de programação, aliadas à minha formação em filosofia, me permitem abordar desafios complexos de forma criativa e encontrar soluções elegantes. Sou um profissional proativo, entusiasta por aprender novas tecnologias e com forte capacidade de adaptação e eager to learn. Estou ansioso para aplicar meus conhecimentos em um ambiente colaborativo e dinâmico, contribuindo para o desenvolvimento de produtos inovadores.</p>
+            <p class="main-paragrafo">Filósofo de formação e apaixonado por tecnologia, estou buscando construir uma carreira sólida no ramo do desenvolvimento. Minha jornada nessa área começou com a descoberta da lógica de programação, que aliada a minha formação em filosofia, me proporcionou uma nova forma de pensar e resolver problemas e tem me permitido abordar desafios complexos de forma criativa. Através de cursos como o de <strong>Desenvolvimento Web Full Stack</strong>, pelo Instituto Euvaldo Lodi, ou da formação em  <strong>Iniciante em Programação</strong> e <strong>Especialização Front End</strong>, pela Alura, tenho desenvolvido projetos que demonstram minha capacidade de criar interfaces que são intuitivas e responsivas. Por fim, sou um profissional proativo, entusiasta por aprender novas tecnologias e com uma forte capacidade de adaptação. Estou ansioso para aplicar meus conhecimentos em um ambiente colaborativo, dinâmico e contribuir para o desenvolvimento de ideias inovadoras.</p>
             <img src="imagens/assinatura.png" alt="Assinatura Kai Ximenes" class="main-assinatura">
         </section>
 
@@ -78,6 +78,14 @@
                 <figure class="skill-item">
                   <img src="imagens/icon-react.png" alt="Ícone do React">
                   <figcaption>React</figcaption>
+                </figure>
+                <figure class="skill-item">
+                  <img src="imagens/icon-typescript.png" alt="Ícone do Typescript">
+                  <figcaption>Typescript</figcaption>
+                </figure>
+                <figure class="skill-item">
+                  <img src="imagens/icon-angular.png" alt="Ícone do Angular">
+                  <figcaption>Angular</figcaption>
                 </figure>
             </div>
         </section>
@@ -213,10 +221,21 @@
         </figcaption>
       </figure>
 
+      <figure class="projeto-item">
+        <a href="https://pokaidex.netlify.app/" target="_blank">
+          <img src="imagens/projeto-pokaidex.png" alt="Projeto Pokaidex">
+        </a>
+        <figcaption>
+          <h3>Projeto Pokaidex</h3>
+          <p style="font-style: italic; font-weight: 600;">HTML, CSS, JavaScript</p>
+          <p>Projeto de uma Pokedex que contém uma lista de pokemons, os classificando por número e tipo.</p>
+        </figcaption>
+      </figure>
   
     </div>
   </section>
-    <!-- CONTATO -->
+
+  <!-- CONTATO -->
     <section id="contato" class="main-contato">
         <h2 class="main-title">Entre em contato:</h2>
         <form action="https://formsubmit.co/kaiximenes@outlook.com" method="POST" class="formulario-contato">
